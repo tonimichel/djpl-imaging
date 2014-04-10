@@ -31,8 +31,6 @@ setup(
         'Intended Audience :: Developers',
         'Operating System :: OS Independent'
     ],
-    install_requires=[
-        'django-productline',
-    ]
+    install_requires=[]
 )
 
