@@ -49,7 +49,7 @@ def install_imaging():
     
     pildir = os.path.dirname(pildir)
 
-    imaging = sys_py('/usr/bin/python -c "import _imaging, os; print os.path.abspath(_imaging.__file__)"')
+    imaging = sys_py('/usr/bin/python -c "from PIL import _imaging; import os; print os.path.abspath(_imaging.__file__)"')
     if not (imaging) :
         print 'ERROR: imaging not found; aborting'
         return
